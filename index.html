@@ -89,7 +89,15 @@
 </div>
 
 
-
+<script     
+        var popit = true;
+     window.onbeforeunload = function() { 
+          if(popit == true) {
+               popit = false;
+               return "Are you sure you want to leave?"; 
+          }
+     }
+        ></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/modernizr.custom.js"></script>
   <script type="text/javascript" src="js/particles.min.js"></script>
